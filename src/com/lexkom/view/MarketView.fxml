@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="780.0" style="-fx-background-color: #6f6920;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTabPane prefHeight="495.0" prefWidth="980.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Manage Sheets">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Stock Sheet">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5545851528384279" layoutX="16.0" layoutY="6.0" orientation="VERTICAL" prefHeight="495.0" prefWidth="980.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="980.0" style="-fx-background-color: #6f9953;">
+                                 <children>
+                                    <TextField layoutX="649.0" layoutY="14.0" prefHeight="30.0" prefWidth="300.0" promptText="Search item" AnchorPane.rightAnchor="29.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </TextField>
+                                    <TableView layoutX="-1.0" layoutY="47.0" prefHeight="165.0" prefWidth="978.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="38.0" layoutY="225.0" mnemonicParsing="false" text="Add" AnchorPane.bottomAnchor="1.0" />
+                                    <Button layoutX="105.0" layoutY="225.0" mnemonicParsing="false" text="Edit" AnchorPane.bottomAnchor="1.0" />
+                                    <Button layoutX="163.0" layoutY="225.0" mnemonicParsing="false" text="Delete" AnchorPane.bottomAnchor="1.0" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="980.0">
+                                 <children>
+                                    <HBox layoutX="13.0" layoutY="16.0" prefHeight="169.0" prefWidth="941.0" spacing="30.0" style="-fx-background-color: #6f6403;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="16.0">
+                                       <children>
+                                          <MaterialDesignIconView fill="#251717" size="150">
+                                             <HBox.margin>
+                                                <Insets left="100.0" top="10.0" />
+                                             </HBox.margin>
+                                          </MaterialDesignIconView>
+                                          <JFXTextArea prefHeight="169.0" prefWidth="349.0" promptText="Description of the item">
+                                             <font>
+                                                <Font size="33.0" />
+                                             </font>
+                                          </JFXTextArea>
+                                          <VBox prefHeight="169.0" prefWidth="260.0">
+                                             <children>
+                                                <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Sale">
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Button>
+                                                <Pane prefHeight="30.0" prefWidth="260.0" />
+                                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" text="Edit info">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Result Sheet">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>
